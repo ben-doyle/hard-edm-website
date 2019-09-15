@@ -1,0 +1,59 @@
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+}
+.hero-wrapper img.background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-hero {
+  height: 100vh !important;
+}
+.hero-wrapper .home-hero {
+  background-size: cover;
+  height: 100%;
+}
+.hero-wrapper .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.home-hero-cont {
+  display: inline-block;
+  position: relative;
+  bottom: 250px;
+  float: left;
+  text-shadow: 1px 1px black;
+}
+.home-hero-cont .home-hero-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+.home-hero-cont .home-hero-heading em {
+  display: block;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 700;
+}
+.home-hero-cont .home-hero-heading span {
+  font-size: 18px;
+  font-weight: 900;
+}
+.home-hero-cont .btn-home-hero {
+  width: 216px;
+  font-size: 18px;
+  margin-top: 24px;
+  font-weight: 700;
+}
+.home-hero-cont .btn-home-hero a {
+  padding: 10% 0;
+}
+.button, button {
+    background-color: #2d9ed7;
+    padding-top: 5%;
+}

@@ -26,3 +26,24 @@
     transform: rotate(360deg);
   }
 }
+
+.col-md-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-sm-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-sm-3 {
+  width: 25%;
+  float: left;
+}
+
+.container {
+  width: 88.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
