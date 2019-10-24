@@ -1,13 +1,36 @@
 import React, { Component } from 'react';
 
-import './Header.css';
+import './Header.scss';
 
 class Header extends Component {
+    state: HeaderState;
+
+    constructor(props: any) {
+        super(props);
+        this.state = { scrolled: false }
+    }
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+    handleScroll = (event: any) => {
+        if (window.scrollY < 20) {
+            this.setState({ scrolled: false })
+        } else {
+            this.setState({ scrolled: true })
+        }
+    }
+
     render() {
         return (
             <header className="site-header">
                 <nav id="site-navigation" className="main-navigation" role="navigation">
-                    <div className="navbar navbar-default">
+                    <div className="navbar navbar-default" style={ this.state.scrolled ? { backgroundColor: "black" } : {} }>
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-3">
@@ -39,6 +62,10 @@ class Header extends Component {
             </header>
         );
     }
+}
+
+interface HeaderState {
+    scrolled: boolean
 }
 
 export default Header;

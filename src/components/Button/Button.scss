@@ -1,5 +1,5 @@
 .button, button {
-  border-radius: 2px;
+  border-radius: 10px;
   cursor: pointer;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -11,6 +11,7 @@
   margin-right: 10px;
   vertical-align: top;
 }
+
 .button:link, .button:visited, .button:hover, .button:active,
 button:link,
 button:visited,
@@ -18,11 +19,13 @@ button:hover,
 button:active {
   color: white;
 }
+
 .button--outline1,
 button--outline1 {
   background: white;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
+
 .button--outline1:link, .button--outline1:visited, .button--outline1:hover, .button--outline1:active,
 button--outline1:link,
 button--outline1:visited,
@@ -30,19 +33,22 @@ button--outline1:hover,
 button--outline1:active {
   color: gray;
 }
+
 .button--outline2,
 button--outline2 {
   background: transparent;
   color: white;
   border: 1px solid white;
 }
+
 .button--outline2:hover,
 button--outline2:hover {
   padding: 16px 24px;
 }
+
 .button[target*=_blank],
 button[target*=_blank] {
-  background-image: url(../assets/arrow-external-white.svg);
-  background-position: right 2px top 2px;
+  background-image: url(../../assets/arrow-external-white.svg);
+  background-position: right 10px top 10px;
   background-repeat: no-repeat;
 }

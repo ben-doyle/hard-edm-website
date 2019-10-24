@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import './Button.css';
-import './Hero.css';
+import '../Button/Button.scss';
+import './Hero.scss';
 
 class Hero extends Component {
     render() {
@@ -9,7 +9,7 @@ class Hero extends Component {
             <div className="hero-wrapper">
                 <div className="home-hero">
                     <picture>
-                        <img src="https://s3-ap-southeast-2.amazonaws.com/hardedm.com.au/emailImages/2019-08-15/header.jpg" className="background" alt="home hero" />
+                        <img src="https://s3-ap-southeast-2.amazonaws.com/hardedm.com.au/emailImages/bihfest.png" className="background" alt="home hero" />
                     </picture>
                     <div className="container">
                         <div className="home-hero-cont">
